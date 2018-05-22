@@ -1,0 +1,39 @@
+﻿@model IEnumerable<Crud_LuisMoraes.Models.Uf>
+
+@{
+    ViewBag.Title = "Ufs";
+}
+
+<h2>Ufs</h2>
+
+<p>
+    @Html.ActionLink("Criar Nova", "Create")
+</p>
+<table class="table">
+    <tr>
+        <th>
+            @Html.DisplayName("Estado")
+        </th>
+        <th>
+            @Html.DisplayName("Sigla")
+        </th>
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+        <td>
+            @Html.DisplayFor(modelItem => item.estado)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.sigla)
+        </td>
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.id }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.id }) |
+            @Html.ActionLink("Apagar", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

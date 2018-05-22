@@ -1,0 +1,40 @@
+﻿@model Crud_LuisMoraes.Models.Uf
+
+@{
+    ViewBag.Title = "Apagar";
+}
+
+<h2>Uf</h2>
+
+<h3>Tem certeza que deseja apagar este registro?</h3>
+<div>
+   
+    <hr />
+    <dl class="dl-horizontal">
+        <dt>
+            @Html.DisplayName("Estado")
+        </dt>
+
+  
+        <dd>
+            @Html.DisplayFor(model => model.estado)
+        </dd>
+        <dt>
+            @Html.DisplayName("Sigla")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.sigla)
+        </dd>
+
+    </dl>
+
+    @using (Html.BeginForm()) {
+        @Html.AntiForgeryToken()
+
+        <div class="form-actions no-color">
+            <input type="submit" value="Excluir" class="btn btn-default" /> |
+            @Html.ActionLink("Voltar para a lista", "Index")
+        </div>
+    }
+</div>

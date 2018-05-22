@@ -1,0 +1,53 @@
+﻿@model IEnumerable<Crud_LuisMoraes.Models.Estabelecimentos>
+
+@{
+    ViewBag.Title = "Estabelecimentos";
+}
+
+<h2>Estabelecimentos</h2>
+
+<p>
+    @Html.ActionLink("Criar Novo", "Create")
+</p>
+<table class="table">
+    <tr>
+       
+       
+        <th>
+            @Html.DisplayName("Cnpj")
+        </th>
+        <th>
+            @Html.DisplayName("Razão Social")
+        </th>
+        <th>
+            @Html.DisplayName("Nome Fantasia")
+        </th>
+        
+     
+        <th></th>
+    </tr>
+
+@foreach (var item in Model) {
+    <tr>
+
+       
+        <td>
+            @Html.DisplayFor(modelItem => item.cnpj)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.razaoSocial)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.nomeFantasia)
+        </td>
+        
+       
+        <td>
+            @Html.ActionLink("Editar", "Edit", new { id=item.id, @class = "btn btn-success"  }) |
+            @Html.ActionLink("Detalhes", "Details", new { id=item.id }) |
+            @Html.ActionLink("Apagar", "Delete", new { id=item.id })
+        </td>
+    </tr>
+}
+
+</table>

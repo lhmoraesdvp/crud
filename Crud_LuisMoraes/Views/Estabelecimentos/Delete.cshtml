@@ -1,0 +1,104 @@
+﻿@model Crud_LuisMoraes.Models.Estabelecimentos
+
+@{
+    ViewBag.Title = "Apagar";
+}
+<link href="@Url.Content("~/Content/jquery-ui.css")" rel="stylesheet" type="text/css" />
+
+
+<h3>Tem certeza que deseja excluir este registro?</h3>
+<div>
+
+    <hr />
+    <dl class="dl-horizontal">
+        <div id="accordion">
+            <h3>Dados do Estabelecimento</h3>
+            <div>
+                <p>
+        <dt>
+            @Html.DisplayName("CNPJ")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.cnpj)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Razão Social")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.razaoSocial)
+        </dd>
+
+        <dt>
+            @Html.DisplayName("Nome Fantasia")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.nomeFantasia)
+        </dd>
+        <dt>
+            @Html.DisplayName("Categoria")
+        </dt>
+
+        <dd>
+            @Html.DisplayFor(model => model.Categorias.categoria)
+        </dd>
+
+        
+
+
+        </p>
+</div>
+
+
+</div>
+
+
+    </dl>
+
+@using (Html.BeginForm())
+{
+    @Html.AntiForgeryToken()
+
+<div class="form-actions no-color">
+    @Html.ActionLink("Voltar para lista", "Index") |
+    <input type="submit" value="Apagar" class="btn btn-default" /> 
+
+</div>
+}
+</div>
+
+@section Scripts {
+    @Scripts.Render("~/bundles/jqueryval")
+
+
+    <script type="text/javascript"
+            src="~/Scripts/jquery-ui.js">
+    </script>
+
+
+    <script type="text/javascript">
+    $(function () {
+        $("#accordion").accordion();
+    });
+    </script>
+
+
+
+    <script>
+        $(document).ready(function () {
+            $("#telefone").inputmask("mask", { "mask": "(99)99999999" });
+            $("#cnpj").inputmask("mask", { "mask": "99.999.999/9999-99" }, { reverse: true });
+            $("#cep").inputmask("mask", { "mask": "99999-999" });
+            $("#nascimento").inputmask("mask", { "mask": "99/99/9999" });
+            $("#preco").inputmask("mask", { "mask": "999.999,99" }, { reverse: true });
+            $("#valor").inputmask("mask", { "mask": "#.##9,99" }, { reverse: true });
+            $("#ip").inputmask("mask", { "mask": "999.999.999.999" });
+
+
+
+        });
+    </script>
+}
