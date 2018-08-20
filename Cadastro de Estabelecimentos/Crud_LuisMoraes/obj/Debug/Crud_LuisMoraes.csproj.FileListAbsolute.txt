@@ -298,8 +298,8 @@ C:\Users\luis.moraes\Documents\GitHub\crud\Cadastro de Estabelecimentos\Crud_Lui
 C:\Users\luis.moraes\Documents\GitHub\crud\Cadastro de Estabelecimentos\Crud_LuisMoraes\bin\pt-br\System.Web.WebPages.resources.dll
 C:\Users\luis.moraes\Documents\GitHub\crud\Cadastro de Estabelecimentos\Crud_LuisMoraes\bin\pt-br\System.Web.WebPages.Deployment.resources.dll
 C:\Users\luis.moraes\Documents\GitHub\crud\Cadastro de Estabelecimentos\Crud_LuisMoraes\bin\pt-br\System.Web.WebPages.Razor.resources.dll
-C:\Users\luis.moraes\Documents\GitHub\crud\Cadastro de Estabelecimentos\Crud_LuisMoraes\obj\Debug\Crud_LuisMoraes.csprojResolveAssemblyReference.cache
 C:\Users\luis.moraes\Documents\GitHub\crud\Cadastro de Estabelecimentos\Crud_LuisMoraes\obj\Debug\Crud_LuisMoraes.csproj.CoreCompileInputs.cache
 C:\Users\luis.moraes\Documents\GitHub\crud\Cadastro de Estabelecimentos\Crud_LuisMoraes\obj\Debug\Crud_LuisMoraes.csproj.CopyComplete
 C:\Users\luis.moraes\Documents\GitHub\crud\Cadastro de Estabelecimentos\Crud_LuisMoraes\obj\Debug\Crud_LuisMoraes.dll
 C:\Users\luis.moraes\Documents\GitHub\crud\Cadastro de Estabelecimentos\Crud_LuisMoraes\obj\Debug\Crud_LuisMoraes.pdb
+C:\Users\luis.moraes\Documents\GitHub\crud\Cadastro de Estabelecimentos\Crud_LuisMoraes\obj\Debug\Crud_LuisMoraes.csprojAssemblyReference.cache
