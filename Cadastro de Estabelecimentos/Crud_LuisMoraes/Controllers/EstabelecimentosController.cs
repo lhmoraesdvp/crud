@@ -21,6 +21,19 @@ namespace Crud_LuisMoraes.Controllers
             return View(estabelecimentos.ToList());
         }
 
+
+        [HttpPost]
+        public string SubmeterInscricao(string Nome, string Endereco)
+        {
+            if (!String.IsNullOrEmpty(Nome) && !String.IsNullOrEmpty(Endereco))
+                //TODO: salvar dados no banco de dados
+                return "Obrigado " + Nome + ". O dados foram Salvos.";
+            else
+                return "Complete a informação do formulário.";
+        }
+ 
+
+
         // GET: Estabelecimentos/Details/5
         public ActionResult Details(int? id)
         {
